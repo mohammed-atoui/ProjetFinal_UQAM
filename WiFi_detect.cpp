@@ -33,7 +33,7 @@ void loop() {
       }
     }
 
-    // Afficher des 6 réseaux les plus forts
+    // Affichage des 6 réseaux les plus forts
     int maxNetworks = min(n, 6);
     for (int i = 0; i < maxNetworks; i++) {
       String ssid = WiFi.SSID(i);
