@@ -33,7 +33,7 @@ void loop() {
       }
     }
 
-    // Afficher les 6 réseaux les plus forts
+    // Afficher des 6 réseaux les plus forts
     int maxNetworks = min(n, 6);
     for (int i = 0; i < maxNetworks; i++) {
       String ssid = WiFi.SSID(i);
@@ -72,7 +72,7 @@ void loop() {
       Serial.printf("   Bandwidth : %s\n", bande.c_str());
       Serial.println("..............................");
 
-      // Affichage les caractéristique sur écran
+      // Affichage des caractéristiques sur écran
       u8g2.clearBuffer();
       u8g2.drawStr(0, 10, ("SSID: " + ssid).c_str());
       u8g2.drawStr(0, 22, ("ENCRYPTION: " + encStr).c_str());
